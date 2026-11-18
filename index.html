@@ -28,7 +28,7 @@ button:disabled{opacity:.4;cursor:default}
 
 /* 섬 선택 */
 .mapArea{flex:1;min-height:0;position:relative;overflow:hidden}
-.stage{position:absolute;inset:0;margin:auto;width:100%;max-width:900px;aspect-ratio:1024/768;max-height:100%}
+.stage{position:absolute;inset:0;margin:auto;width:100%;max-width:1000px;aspect-ratio:1024/768;max-height:100%}
 .isl{position:absolute;cursor:pointer;transition:transform .2s ease,filter .2s ease;transform-origin:50% 50%;touch-action:none}
 .isl img{width:100%;height:100%;object-fit:contain;pointer-events:none;user-select:none;-webkit-user-drag:none}
 .isl.big{transform:scale(1.18);z-index:5;filter:drop-shadow(0 8px 10px rgba(0,0,0,.3))}
@@ -116,27 +116,27 @@ const TILE_NAMES = {'.':'땅','D':'선착장','=':'길','#':'바위','~':'물','
 
 const ISLANDS = [
   { id:'geum', el:'금', hanja:'金', name:'은빛봉우리 섬', img:'assets/islands/geum.png', color:'#c4ccd6', dark:'#5d6673', water:'#9fd0ea', path:'#dfe3e8',
-    bbox:{x:285,y:20,w:420,h:220},
+    bbox:{x:372,y:28,w:280,h:200},
     terrain:'흰 바위 봉우리 세 개와 그 아래 펼쳐진 돌빛 평지',
     plots:'집터 3곳 (봉우리 아래 평지, 봉우리 사이, 돌빛 가장자리)',
     map:["############","#..........#","#.========.#","#.=......=.#","#D=......=.#","#.=......=.#","#.========.#","#..........#","############"]},
   { id:'hwa', el:'화', hanja:'火', name:'붉은절벽 섬', img:'assets/islands/hwa.png', color:'#d9906f', dark:'#4b3a3d', water:'#ff6b35', path:'#b8a08f',
-    bbox:{x:15,y:195,w:305,h:310},
+    bbox:{x:40,y:250,w:280,h:230},
     terrain:'한쪽으로 길게 이어지는 붉은 절벽과 아래쪽의 따뜻한 빛깔 들판',
     plots:'집터 2곳 (절벽 위 전망 터, 들판 입구 터)',
     map:["   ####"," ##....##","#..D.....#","#.~~.....~#","#.~~..==..#","#.....====.#"," #..~~.....#"," #....=...#","  ###...##","    ###"]},
   { id:'to', el:'토', hanja:'土', name:'황금들판 섬', img:'assets/islands/to.png', color:'#e0b458', dark:'#7a5a33', water:'#8ec5e8', path:'#e8d6b0',
-    bbox:{x:295,y:245,w:410,h:280},
+    bbox:{x:352,y:236,w:320,h:250},
     terrain:'뒤쪽의 둥근 언덕 두 개와 지도에서 가장 넓은 평원',
     plots:'집터 4곳 (평원 중심, 언덕 아래, 길가, 들판 끝)',
     map:["   ......"," ..........","...D=====...","...=.......#","....=....#..","..........=.","..###.....=.","...........#","  ....==....","    ...."]},
   { id:'su', el:'수', hanja:'水', name:'물굽이 섬', img:'assets/islands/su.png', color:'#8fc3c9', dark:'#2f6a4a', water:'#4d9fd6', path:'#e8d6b0',
-    bbox:{x:700,y:200,w:310,h:320},
+    bbox:{x:704,y:250,w:280,h:240},
     terrain:'작은 만으로 이어지는 굽은 강과 강 안쪽의 넓은 풀밭',
     plots:'집터 2곳 (강가 터, 풀밭 터)',
     map:["  ####"," #.D.#~~~~","#.......~~~","#.....===...","#.....~~~...","#.....~~~...", " #....~~....","  ####  ~~"]},
   { id:'mok', el:'목', hanja:'木', name:'풀빛언덕 섬', img:'assets/islands/mok.png', color:'#a9d98f', dark:'#3f7a4a', water:'#7fbde0', path:'#e6d0a0',
-    bbox:{x:215,y:520,w:555,h:230},
+    bbox:{x:362,y:496,w:300,h:190},
     terrain:'층층이 이어지는 낮은 언덕과 한가운데의 열린 들판',
     plots:'집터 3곳 (언덕 계단 터, 들판 터, 숲 가장자리 터)',
     map:["  ###   ###"," #..=....#","#...=.....#","#..D=......#","#.....====.#","#.....=....#","##....=..##"," #...=....#","  ###...##","     ###"]}
